@@ -52,12 +52,14 @@ public class Person {
 
             else if (this.spouse == null & myPerson.spouse != null) {
                 // myPerson is married - Divorce him/her!
-                divorce (myPerson);
 
                 myPerson.divorce (myPerson.spouse);
-                this.divorce (this.spouse);
-                System.out.println(this.name + " and " + myPerson.name + " are married now!\n");
 
+                this.spouse = myPerson;
+                myPerson.spouse = this;
+
+                System.out.println(this.name + " and " + myPerson.name + " are married now!\n");
+                System.out.println(this.name + "'s statuses has been changed!\n");
 
                 // this status has been changed
                 return true;
@@ -65,12 +67,14 @@ public class Person {
 
             else if (this.spouse != null & myPerson.spouse == null) {
                 // thisPerson is married - Divorce him/her!
-                divorce (this);
 
-                myPerson.divorce (myPerson.spouse);
                 this.divorce (this.spouse);
-                System.out.println(this.name + " and " + myPerson.name + " are married now!\n");
 
+                this.spouse = myPerson;
+                myPerson.spouse = this;
+
+                System.out.println(this.name + " and " + myPerson.name + " are married now!\n");
+                System.out.println(myPerson.name + "'s statuses has been changed!\n");
 
                 // person's status has been changed
                 return true;
