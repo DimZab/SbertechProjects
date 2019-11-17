@@ -24,6 +24,7 @@ public class Assignment03 {
 
         if (ParseText.FillLinesAndMap(wordMap, lines, linesSaved, words, srcFile, charset) == false) {
 
+
             // Task 1;
             ParseText.WordsCounter(words, wordMap);
 
