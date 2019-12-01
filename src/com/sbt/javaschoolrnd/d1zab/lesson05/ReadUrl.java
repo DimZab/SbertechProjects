@@ -10,11 +10,12 @@ import java.util.Scanner;
 
 public class ReadUrl {
 
-    private static void readContent(String url) throws IOException {
+    private static boolean readContent(String url) throws IOException {
         Object content = new URL(url).getContent();
 
         if (content instanceof InputStream) {
             InputStream contentStream = (InputStream) content;
+
             try (Scanner contentScanner = new Scanner(contentStream)) {
                 while (contentScanner.hasNext()) {
                     System.out.println(contentScanner.next());
@@ -23,19 +24,27 @@ public class ReadUrl {
         } else {
             throw new IOException("Unsupported content kind");
         }
+        return true;
     }
 
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in); // System.in закрывать не нужно
 
+        boolean flag = true;
+
         do {
             System.out.println("Type url");
             String url = scanner.next();
 
-            try {
-                readContent(url);
-
+            if (url.equalsIgnoreCase("q")) {
+                System.out.println("");
                 break;
+            }
+
+            try {
+                flag = readContent(url);
+
+
             } catch (MalformedURLException e) {
                 System.out.println("Malformed URL specified!");
             } catch (UnknownHostException e) {
@@ -46,7 +55,7 @@ public class ReadUrl {
             }
 
             System.out.println("Try again");
-        } while (true);
+        } while (flag);
     }
 
 }
