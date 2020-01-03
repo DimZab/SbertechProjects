@@ -1,4 +1,8 @@
-package com.sbt.javaschoolrnd.d1zab.lesson07ClassLoader.CryptoPluginManager.source.main;
+//package com.sbt.javaschoolrnd.d1zab.lesson07ClassLoader.CryptoPluginManager.source.start;//package com.sbt.javaschoolrnd.d1zab.lesson07ClassLoader.CryptoPluginManager.source.main.sbt;
+//
+//import com.sbt.javaschoolrnd.d1zab.lesson07ClassLoader.CryptoPluginManager.source.main.sbt.CryptoPluginManager;
+
+package com.sbt.javaschoolrnd.d1zab.lesson07ClassLoader.CryptoPluginManager.source.start.sbt;
 
 public class Main {
 

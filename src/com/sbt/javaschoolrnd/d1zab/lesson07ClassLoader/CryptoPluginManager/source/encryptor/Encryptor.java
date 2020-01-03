@@ -1,4 +1,4 @@
-package encryptor;
+package com.sbt.javaschoolrnd.d1zab.lesson07ClassLoader.CryptoPluginManager.source.encryptor;
 
 
 import java.io.IOException;
@@ -13,11 +13,12 @@ import java.nio.file.Paths;
 
 public class Encryptor {
     public static void main(String[] args) throws IOException {
-        encryptFile("plugins/PrinterPlugin.class", "secretkey");
+        encryptFile("C:/Users/ElonMusk/Desktop/Sberbank/SbertechProjects/src/com/sbt/javaschoolrnd/d1zab/lesson07ClassLoader/CryptoPluginManager/plugins/PrinterPlugin.class", "secretkey");
     }
 
     private static void encryptFile(String filePath, String key) throws IOException {
         Path path = Paths.get(filePath);
+        System.out.println("Encrypting file " + path.toAbsolutePath());
         byte[] content = Files.readAllBytes(path);
 
         System.out.println("Encrypting file " + path.toAbsolutePath());

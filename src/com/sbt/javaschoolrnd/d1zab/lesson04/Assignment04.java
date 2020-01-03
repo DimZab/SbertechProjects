@@ -1,8 +1,5 @@
 package com.sbt.javaschoolrnd.d1zab.lesson04;
 
-import com.sbt.javaschoolrnd.d1zab.lesson04.CountMap;
-import com.sbt.javaschoolrnd.d1zab.lesson04.CountMapImpl;
-
 public class Assignment04 {
     public static void main(String[] args) {
         CountMap<Integer> map = new CountMapImpl<>();

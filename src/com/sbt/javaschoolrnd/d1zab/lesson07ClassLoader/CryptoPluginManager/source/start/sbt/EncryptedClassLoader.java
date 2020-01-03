@@ -1,4 +1,4 @@
-package com.sbt.javaschoolrnd.d1zab.lesson07ClassLoader.CryptoPluginManager.source.main;
+package com.sbt.javaschoolrnd.d1zab.lesson07ClassLoader.CryptoPluginManager.source.start.sbt;
 
 import java.io.File;
 import java.io.IOException;
@@ -11,11 +11,11 @@ import java.nio.file.Paths;
  */
 
 
-public class CryptoPluginLoader extends ClassLoader {
+public class EncryptedClassLoader extends ClassLoader {
     private final String pluginRootDirectory;
     private final String key;
 
-    public CryptoPluginLoader(ClassLoader parent, String pluginRootDirectory, String key) {
+    public EncryptedClassLoader(ClassLoader parent, String pluginRootDirectory, String key) {
         super(parent);
         this.pluginRootDirectory = pluginRootDirectory;
         this.key = key;

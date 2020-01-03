@@ -11,13 +11,13 @@ public class PluginManager {
         this.pluginRootDirectory = pluginRootDirectory;
     }
 
-    public IPlugin load(String pluginName, String pluginClassName) throws MalformedURLException,
+    public Plugin load(String pluginName, String pluginClassName) throws MalformedURLException,
             ClassNotFoundException, IllegalAccessException, InstantiationException {
 
         URL url[] = {new File(pluginRootDirectory + "\\" + pluginName + "\\").toURI().normalize().toURL()};
         System.out.println(url[0].toString());
 
         PluginLoader pluginLoader = new PluginLoader(url);
-        return (IPlugin) pluginLoader.loadClass(pluginClassName).newInstance();
+        return (Plugin) pluginLoader.loadClass(pluginClassName).newInstance();
     }
 }

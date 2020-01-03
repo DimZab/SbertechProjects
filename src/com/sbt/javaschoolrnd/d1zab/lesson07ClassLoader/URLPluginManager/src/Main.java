@@ -14,17 +14,15 @@ public class Main {
 
             PluginManager pluginManager = new PluginManager(current + "\\plugins");
 
-            IPlugin printer = pluginManager.load("Another","ru.plugin.AnotherPlugin");
+            System.out.println("Encrypting file " + currentPath.toAbsolutePath());
+
+
+            Plugin printer = pluginManager.load("AnotherPlugin","com.sbt.javaschoolrnd.d1zab.lesson07ClassLoader.URLPluginManager.Another.AnotherPlugin");
             printer.doUsefull();
 
-            IPlugin anotherIPlugin = pluginManager.load("PluginManager","ru.plugin.PluginManager");
-            anotherIPlugin.doUsefull();
+            Plugin anotherPlugin = pluginManager.load("PluginManager","com.sbt.javaschoolrnd.d1zab.lesson07ClassLoader.URLPluginManager.PluginManager.PluginManager");
+            anotherPlugin.doUsefull();
 
-            IPlugin printerAverveyko = pluginManager.load("Printer","ru.plugin.averveyko.PrinterPlugin");
-            printerAverveyko.doUsefull();
-
-            IPlugin printerIvanov = pluginManager.load("Printer","ru.plugin.ivanov.PrinterPlugin");
-            printerIvanov.doUsefull();
 
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
