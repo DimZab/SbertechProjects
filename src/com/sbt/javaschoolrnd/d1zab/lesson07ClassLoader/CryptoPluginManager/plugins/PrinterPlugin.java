@@ -1,4 +1,4 @@
-import com.sbt.javaschoolrnd.d1zab.lesson07ClassLoader.CryptoPluginManager.source.start.sbt.Plugin;
+import com.sbt.javaschoolrnd.d1zab.lesson07ClassLoader.CryptoPluginManager.source.start.Plugin;
 
 public class PrinterPlugin implements Plugin {
 	@Override

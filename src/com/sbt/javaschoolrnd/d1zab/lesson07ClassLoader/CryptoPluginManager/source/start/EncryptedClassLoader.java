@@ -1,4 +1,4 @@
-package com.sbt.javaschoolrnd.d1zab.lesson07ClassLoader.CryptoPluginManager.source.start.sbt;
+package com.sbt.javaschoolrnd.d1zab.lesson07ClassLoader.CryptoPluginManager.source.start;
 
 import java.io.File;
 import java.io.IOException;
