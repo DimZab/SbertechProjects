@@ -4,4 +4,4 @@ To solve the problem with h2database, I had to completely remove IDEA, all loade
 
 To solve the problem with file names, I had to change the location of some individual classes and packages.
 
-All further task are in progress.
+All further task are in progress.  
