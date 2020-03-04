@@ -1,6 +1,6 @@
 package ru.sbertech.javaschoolrnd.d1zab;
 
-import ru.sbertech.javaschoolrnd.d1zab.lesson01.mysubpackage.MySecondJavaClass;
+import ru.sbertech.javaschoolrnd.d1zab.mysubpackage.MySecondJavaClass;
 
 public class MyFirstJavaClass {
 

@@ -1,4 +1,4 @@
-package ru.sbertech.javaschoolrnd.d1zab.lesson01.mysubpackage;
+package ru.sbertech.javaschoolrnd.d1zab.mysubpackage;
 
 public class MySecondJavaClass {
 

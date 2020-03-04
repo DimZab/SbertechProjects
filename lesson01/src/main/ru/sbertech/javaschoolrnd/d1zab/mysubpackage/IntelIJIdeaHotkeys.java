@@ -1,4 +1,4 @@
-package ru.sbertech.javaschoolrnd.d1zab.lesson01.mysubpackage;
+package ru.sbertech.javaschoolrnd.d1zab.mysubpackage;
 
 // CTRL Alt O = optimize all unused imports
 // ctrl + alt + l - align all code
