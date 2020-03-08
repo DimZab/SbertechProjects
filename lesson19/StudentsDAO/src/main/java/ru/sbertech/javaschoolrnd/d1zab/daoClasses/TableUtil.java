@@ -30,7 +30,10 @@ public class TableUtil {
                     "  lesson_id INT,\n" +
                     "  CONSTRAINT FK_StudentsStudentsVisit FOREIGN KEY (student_id) REFERENCES Students(id),\n" +
                     "  CONSTRAINT FK_LessonsStudentsVisit FOREIGN KEY (lesson_id) REFERENCES Lessons(id)\n" +
+                    // isPresent INT NOT NULL 1, \n"
                     ");";
+
+    // isPresent INT NOT NULL 1, \n" - value 1 is the Student is present, 0 - absent
 
     public static void createTablesIfNotExist(Connection connection) throws SQLException {
         try (Statement statement = connection.createStatement()) {
