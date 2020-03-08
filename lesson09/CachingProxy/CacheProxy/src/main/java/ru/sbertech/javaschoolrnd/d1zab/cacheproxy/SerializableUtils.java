@@ -1,13 +1,13 @@
-package ru.sbertech.javaschoolrnd.d1zab;
+package ru.sbertech.javaschoolrnd.d1zab.cacheproxy;
 
 import java.io.*;
 import java.util.zip.DeflaterOutputStream;
 import java.util.zip.InflaterInputStream;
 
 public class SerializableUtils {
-    private static final String SERIALIZE_EXCEPTION_MSG = "Неудалось записать кэш в файл ";
-    private static final String DESERIALIZE_EXCEPTION_MSG = "Неудалось загрузить кэш из файла ";
-    private static final String CLASSNOTFOUND_EXCEPTION_MSG = "Класс не найден ";
+    private static final String SERIALIZE_EXCEPTION_MSG = "Failed to write a cache to file ";
+    private static final String DESERIALIZE_EXCEPTION_MSG = "Failed to load cache from file ";
+    private static final String CLASSNOTFOUND_EXCEPTION_MSG = "Class not found ";
 
     public static void serialize(final Object obj, final String fileName, final boolean compressed) {
         File file = new File(fileName);

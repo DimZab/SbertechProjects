@@ -1,4 +1,4 @@
-package ru.sbertech.javaschoolrnd.d1zab;
+package ru.sbertech.javaschoolrnd.d1zab.cacheproxy;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

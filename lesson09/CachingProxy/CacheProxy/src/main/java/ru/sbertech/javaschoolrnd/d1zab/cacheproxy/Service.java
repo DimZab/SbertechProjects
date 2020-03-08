@@ -1,4 +1,4 @@
-package ru.sbertech.javaschoolrnd.d1zab;
+package ru.sbertech.javaschoolrnd.d1zab.cacheproxy;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ public class Service implements IService {
 
     @Override
     public double doHardWork(final String work, final int value) {
-        //Тут происходит очень сложная работа
+        // Extremely hard work comes here
         return work.length() / (value * 3.14);
     }
 

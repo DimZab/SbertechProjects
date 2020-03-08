@@ -1,15 +1,15 @@
-package ru.sbertech.javaschoolrnd.d1zab;
+package ru.sbertech.javaschoolrnd.d1zab.main;
 
-import ru.sbertech.javaschoolrnd.d1zab.CacheProxy;
-import ru.sbertech.javaschoolrnd.d1zab.CacheType;
-import ru.sbertech.javaschoolrnd.d1zab.IService;
-import ru.sbertech.javaschoolrnd.d1zab.Service;
+import ru.sbertech.javaschoolrnd.d1zab.cacheproxy.CacheProxy;
+import ru.sbertech.javaschoolrnd.d1zab.cacheproxy.CacheType;
+import ru.sbertech.javaschoolrnd.d1zab.cacheproxy.IService;
+import ru.sbertech.javaschoolrnd.d1zab.cacheproxy.Service;
 
 import java.io.File;
 
 public class MainCacheProxy {
     //Каталог хранения кэша вычислений
-    private static final String CACHE_PATH = "cache" + File.separator;
+    private static final String CACHE_PATH = "history" + File.separator;
     private static final CacheType DEFAULT_CACHE_TYPE = CacheType.FILE;
 
     public static void main(String[] args) {

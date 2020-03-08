@@ -1,9 +1,9 @@
-package ru.sbertech.javaschoolrnd.d1zab;
+package ru.sbertech.javaschoolrnd.d1zab.cacheproxy;
 
 /**
- * Велосипед, который по имени класса-обертки (Byte, Short, Integer, Long, Float, Double)
- * возвращает соответствующий примитивный тип.
- * Если параметр не класс-обертка, возвращается параметр без изменений.
+   * By name of the wrapper class (Byte, Short, Integer, Long, Float, Double)
+   * returns the corresponding primitive type.
+   * If the parameter is not a wrapper class, the parameter returns without changes.
  */
 public class ReflectionsUtils {
     public static Class GetPrimitiveClass(final Class wrapperClass) {

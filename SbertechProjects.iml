@@ -26,7 +26,7 @@
       <sourceFolder url="file://$MODULE_DIR$/lesson09/CachingProxy/CacheProxy/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/lesson09/CachingProxy/Main/src/main/java" isTestSource="false" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library" exported="">
       <library name="JUnit4">

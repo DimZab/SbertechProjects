@@ -12,6 +12,6 @@
 
     <groupId>ru.sbertech.javaschoolrnd.d1zab.CachingProxy</groupId>
     <artifactId>CacheProxy</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
 </project>

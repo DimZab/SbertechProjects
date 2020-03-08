@@ -3,6 +3,7 @@ package ru.sbertech.javaschoolrnd.d1zab;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
+import ru.sbertech.javaschoolrnd.d1zab.cacheproxy.SerializableUtils;
 
 import java.io.File;
 
