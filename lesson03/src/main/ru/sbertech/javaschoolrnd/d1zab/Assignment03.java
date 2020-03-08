@@ -9,8 +9,7 @@ public class Assignment03 {
 
     public static void main(String[] args) {
 
-        Path srcFile = Paths.get("C:/Users/ElonMusk/Desktop/Sberbank/SbertechProjects/src/com/sbt/javaschoolrnd/d1zab/lesson03",
-                "KISS.txt");
+        Path srcFile = Paths.get("C:/Users/ElonMusk/Desktop/Sberbank/SbertechProjects/lesson03/src/main/ru/sbertech/javaschoolrnd/d1zab", "KISS.txt");
 
         Charset charset = Charset.forName("ISO-8859-1");
 
@@ -19,7 +18,7 @@ public class Assignment03 {
         List<String> linesSaved = new ArrayList<>();
         Map<String, Integer> wordMap = new HashMap<>();
 
-        if (ParseText.FillLinesAndMap(wordMap, lines, linesSaved, words, srcFile, charset) == false) {
+        if (!ParseText.FillLinesAndMap(wordMap, lines, linesSaved, words, srcFile, charset)) {
 
             // Task 1;
             ParseText.WordsCounter(words, wordMap);

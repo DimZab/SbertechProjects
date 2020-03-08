@@ -14,7 +14,7 @@ public class ParseText {
                                           List<String> words, Path srcFile, Charset charset) {
 
         boolean fileNotFound = false;
-        File file = new File("C:/Users/ElonMusk/Desktop/Sberbank/SbertechProjects/src/com/sbt/javaschoolrnd/d1zab/lesson03/KISS.txt");
+        File file = new File("C:/Users/ElonMusk/Desktop/Sberbank/SbertechProjects/lesson03/src/main/ru/sbertech/javaschoolrnd/d1zab/KISS.txt");
 
         if (file.exists()) {
             try {
